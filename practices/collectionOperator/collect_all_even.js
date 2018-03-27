@@ -1,7 +1,13 @@
 'use strict';
 
 function collect_all_even(collection) {
-  //在这里写入代码
+  var ret = [];
+  collection.forEach((item) => {
+    if(item %2 == 0){
+      ret.push(item);
+  }
+  });
+  return ret;
 }
 
 module.exports = collect_all_even;
