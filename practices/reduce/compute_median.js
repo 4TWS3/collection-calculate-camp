@@ -1,7 +1,8 @@
 'use strict';
-
+var cumputeMedianNumber = require('../util/computeMedianNumber');
 function compute_median(collection) {
-  //在这里写入代码
+  let ret = cumputeMedianNumber(collection);
+  return ret;
 }
 
 module.exports = compute_median;
