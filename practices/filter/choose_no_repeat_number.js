@@ -1,15 +1,9 @@
 'use strict';
 
+var removeDuplicate = require('../util/removeDuplicate');
+
 function choose_no_repeat_number(collection) {
-  var hash = { };
-  return collection.filter(it => {
-    if(!hash[it]) {
-      hash[it] = true;
-      return true;
-    }
-    else
-      return false;
-  });
+  return removeDuplicate(collection);
 
 }
 

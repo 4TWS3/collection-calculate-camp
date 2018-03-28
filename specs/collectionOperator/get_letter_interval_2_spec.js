@@ -16,6 +16,7 @@ describe('get_letter_interval', function () {
     'w', 'v', 'u', 't'
   ];
 
+
   it('根据给出的两个数字得到对应自增的字母区间', function() {
 
     var result = get_letter_interval(20, 53);
@@ -33,4 +34,5 @@ describe('get_letter_interval', function () {
     var result = get_letter_interval(28, 28);
     expect(result).toEqual(['ab']);
   });
+
 });

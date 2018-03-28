@@ -1,20 +1,10 @@
 'use strict';
-function flattern(collection) {
-  if(collection.length === 1) {
-    return (Array.isArray(collection[0])) ? flattern(collection[0]):[collection[0]]
-  }
-  else if (!Array.isArray(collection[0])) {
-    return [collection[0]].concat(flattern(collection.slice(1)));
-  }
-  else {
-    return (flattern(collection[0])).concat(flattern(collection.slice(1)));
-  }
-}
 
+var flatten = require('../util/flatten');
 
 function double_to_one(collection) {
 
-  return flattern(collection);
+  return flatten(collection);
 }
 
 module.exports = double_to_one;
