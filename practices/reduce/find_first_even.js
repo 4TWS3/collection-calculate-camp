@@ -3,9 +3,11 @@
 function find_first_even(collection) {
   let ret;
   for(let i = 0; i< collection.length; i++) {
-    if(collection[i] % 2 === 0)
+    console.log(collection[i]);
+    if(collection[i] % 2 === 0){
       ret = collection[i];
-    break;
+      break;
+    }
   }
   return ret;
 }
