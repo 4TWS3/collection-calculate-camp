@@ -1,8 +1,16 @@
 'use strict';
 
 function choose_no_repeat_number(collection) {
+  var hash = { };
+  return collection.filter(it => {
+    if(!hash[it]) {
+      hash[it] = true;
+      return true;
+    }
+    else
+      return false;
+  });
 
-  //在这里写入代码
 }
 
 module.exports = choose_no_repeat_number;
