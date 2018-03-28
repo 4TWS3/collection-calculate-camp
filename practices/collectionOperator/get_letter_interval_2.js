@@ -8,9 +8,7 @@ function get_letter_interval_2(number_a, number_b) {
                    14:'n',15:'o',16:'p',17:'q',18:'r',19:'s',20:'t',21:'u',22:'v',23:'w',24:'x',25:'y',26:'z'};
   let fromCodeToChar = function fromCodeToChar(code){
      if(code % 26 ===0 && code !== 0){
-      console.log(code);
       let ret = fromCodeToChar(Math.floor(code/26) -1)+'z';
-       console.log(ret);
       return ret;
     }
     else if(code <= 26) return letterMap[code];
