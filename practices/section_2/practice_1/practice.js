@@ -1,5 +1,9 @@
+
+var countSameElement=require('../countSameElements').countSameElement;;
+
 function count_same_elements(collection) {
-  //在这里写入代码
+
+  return countSameElement(collection);
 }
 
 module.exports = count_same_elements;
