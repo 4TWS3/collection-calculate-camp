@@ -11,8 +11,7 @@ function countSameElement(collection, resultItem = ['key', 'count']) {
       countArr.push( obj );
     }
   });
-  console.log(countMap);
-  return countArr;
+   return countArr;
 }
 
 function count_elements(collection) {
