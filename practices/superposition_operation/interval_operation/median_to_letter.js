@@ -1,8 +1,9 @@
 'use strict';
-
+const cumputeMedianNumber = require('../../util/computeMedianNumber');
+const fromCodeToChar=require('../../util/fromCodeToChar');
 function median_to_letter(collection) {
-
-  //在这里写入代码
+  let median = Math.ceil(cumputeMedianNumber(collection)) ;
+  return fromCodeToChar(median);
 }
 
 module.exports = median_to_letter;

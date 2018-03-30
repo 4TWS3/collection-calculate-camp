@@ -1,5 +1,6 @@
 'use strict';
-var cumputeMedianNumber = require('../util/computeMedianNumber');
+const cumputeMedianNumber = require('../util/computeMedianNumber');
+
 function compute_median(collection) {
   let ret = cumputeMedianNumber(collection);
   return ret;
