@@ -1,5 +1,7 @@
-function create_updated_collection(collection_a, object_b) {
-  //在这里写入代码
-}
+var helpFunction = require('../util/help');
 
+function create_updated_collection(collection_a, object_b) {
+  let cb = (it) =>  it - Math.floor(it/3);
+  return helpFunction(collection_a, object_b, cb);
+}
 module.exports = create_updated_collection;

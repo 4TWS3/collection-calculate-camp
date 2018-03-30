@@ -44,5 +44,5 @@ function deal_shortcut_expression(str) {
 
 }
 
-module.exports = {deal_shortcut_expression,countSameElement};
+module.exports = {countSameElement};
 

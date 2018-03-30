@@ -1,5 +1,6 @@
 function create_updated_collection(collection_a, object_b) {
-  //在这里写入代码
+  var update_collection = require('../practice_3/practice');
+  return update_collection(collection_a,object_b);
 }
 
 module.exports = create_updated_collection;

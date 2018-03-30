@@ -1,12 +1,8 @@
+var helpFunction = require('../util/help');
+
 function create_updated_collection(collection_a, object_b) {
-  let keyArray =object_b.value;
-  let ret =  collection_a.map(item => {
-    if(keyArray.indexOf(item[key]) > -1) {
-      item[count] -= 1;
-    }
-  });
-  console.log(ret);
-  return ret;
+  let cb = (it) => it -= 1;
+  return helpFunction(collection_a, object_b, cb);
 }
 
 module.exports = create_updated_collection;
