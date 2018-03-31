@@ -1,7 +1,7 @@
 'use strict';
 
 
-var computeMediaNumber = require('../util/computeMedianNumber');
+var computeMediaNumber = require('../util/calculateMedianNumber');
 
 function compute_chain_median(collection) {
   let arr = collection.split('->');
