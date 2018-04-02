@@ -1,13 +1,9 @@
 'use strict';
 
+const Number_Utils = require("../util/number_util");
+
 function collect_all_even(collection) {
-  var ret = [];
-  collection.forEach((item) => {
-    if(item %2 == 0){
-      ret.push(item);
-  }
-  });
-  return ret;
+  return collection.filter((it => Number_Utils.is_event(it)));
 }
 
 module.exports = collect_all_even;
