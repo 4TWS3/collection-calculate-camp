@@ -1,18 +1,23 @@
 'use strict';
 
 function get_integer_interval(number_a, number_b) {
-  function createArrayForRange(number_a, number_b) {
-    let ret = [];
-    let step = number_b === number_a ?
-      1 : ((number_b - number_a) / (Math.abs(number_b - number_a)));
-    for (let i = number_a; i !== (number_b + step); i += step) {
-      ret.push(i);
-    }
-    return ret;
+  let step = (number_b > number_a)? 1: -1;
+  let ret = [];
+  for(let num =number_a;num *step <= number_b *step; num+=step ){
+    ret.push(num);  //
   }
+   return ret;
 
-  return createArrayForRange(number_a, number_b)
+  //尾递归
+  /*
+  return (function get_iterger_interval_item(num,pre) {
+    pre.push(num);
+    if(num ===  number_b) return pre;
+    return get_iterger_interval_item(num + step,pre);
+  })(number_a, []);
+*/
+
+
 }
-
 module.exports = get_integer_interval;
 
