@@ -1,11 +1,11 @@
 'use strict';
 var get_integer_interval = require('./get_integer_interval.js');
+var fromCodeToChar = require('../util/fromCodeToChar');
 
 function get_letter_interval(number_a, number_b) {
   let intArry = get_integer_interval(number_a, number_b);
-  let baseCode = 'a'.charCodeAt();
   return intArry.map(item => {
-     return String.fromCharCode(baseCode+item-1);
+     return fromCodeToChar(item);
   });
 }
 
